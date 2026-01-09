@@ -1,21 +1,17 @@
 using UnityEngine;
 
-// Inherits from the Shape class
 public class Cube : Shape
 {
     void Start()
     {
-
         Renderer renderer = GetComponent<Renderer>();
-
         UniColor = renderer.sharedMaterial;
-        Name = this.gameObject.name;
-
+        Name = gameObject.name;
     }
 
     // Overrides the method inherited from Shape
-    protected override void OnMouseDown()
+    protected override void HandleClick()
     {
-        Debug.Log($"Hello, I am a { UniColor.name} {Name}");
+        Debug.Log($"Hello, I am a {UniColor.name} {Name}");
     }
 }

@@ -14,7 +14,7 @@ public class Sphere : Shape
     }
 
     // Overrides the method inherited from Shape
-    protected override void OnMouseDown()
+    protected override void HandleClick()
     {
         Debug.Log($"Hello, I am a {UniColor.name} {Name}");
     }
