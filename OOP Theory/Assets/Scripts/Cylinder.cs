@@ -1,6 +1,7 @@
 using System.Xml.Linq;
 using UnityEngine;
 
+// Inherits from the Shape class
 public class Cylinder : Shape
 {
     void Start()
@@ -13,6 +14,7 @@ public class Cylinder : Shape
 
     }
 
+    // Overrides the method inherited from Shape
     protected override void OnMouseDown()
     {
         Debug.Log($"Hello, I am a {UniColor.name} {Name}");

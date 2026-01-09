@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Inherits from the Shape class
 public class Sphere : Shape
 {
     void Start()
@@ -12,6 +13,7 @@ public class Sphere : Shape
 
     }
 
+    // Overrides the method inherited from Shape
     protected override void OnMouseDown()
     {
         Debug.Log($"Hello, I am a {UniColor.name} {Name}");
